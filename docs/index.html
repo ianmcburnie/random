@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <title>SVG-Test</title>
+        <style>
+            a {
+                display: inline-block;
+            }
+            button {
+                font-size: 1em;
+            }
+            svg {
+                display: inline-block;
+                fill: currentColor;
+                stroke: currentColor;
+                stroke-width: 0;
+                height: 1em;
+                width: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <svg hidden>
+            <symbol id="svg-icon-settings" viewBox="0 0 32 32">
+                <path d="M29.386 18.233h-1.337c-0.611 0-1.264 0.479-1.448 1.063l-0.768 1.87c-0.289 0.54-0.169 1.341 0.261 1.773l0.953 0.949c0.434 0.434 0.434 1.143 0 1.578l-1.581 1.577c-0.432 0.433-1.142 0.433-1.576 0l-0.947-0.95c-0.435-0.431-1.233-0.55-1.773-0.257l-1.87 0.768c-0.585 0.181-1.064 0.832-1.064 1.445v1.337c0 0.611-0.503 1.113-1.116 1.113h-2.232c-0.614 0-1.116-0.503-1.116-1.113v-1.337c0-0.613-0.477-1.264-1.066-1.445l-1.87-0.768c-0.537-0.293-1.336-0.175-1.767 0.257l-0.953 0.95c-0.434 0.433-1.143 0.433-1.575 0l-1.582-1.577c-0.433-0.436-0.433-1.144 0-1.578l0.95-0.949c0.434-0.431 0.552-1.233 0.261-1.773l-0.77-1.87c-0.179-0.584-0.827-1.063-1.444-1.065h-1.34c-0.613 0-1.116-0.503-1.116-1.117v-2.232c0-0.613 0.503-1.114 1.116-1.114l1.339 0.002c0.616 0 1.264-0.481 1.448-1.066l0.766-1.87c0.293-0.541 0.174-1.337-0.261-1.771l-0.949-0.95c-0.434-0.434-0.434-1.145 0-1.578l1.579-1.577c0.432-0.433 1.14-0.433 1.575 0l0.953 0.948c0.434 0.434 1.229 0.553 1.771 0.261l1.867-0.767c0.588-0.183 1.066-0.835 1.066-1.448v-1.337c0-0.614 0.502-1.117 1.116-1.117h2.232c0.613 0 1.116 0.503 1.116 1.117v1.337c0 0.613 0.479 1.265 1.064 1.448l1.864 0.767c0.544 0.292 1.343 0.172 1.775-0.261l0.951-0.948c0.435-0.433 1.145-0.433 1.576 0l1.581 1.577c0.434 0.433 0.434 1.144 0 1.579l-0.953 0.95c-0.43 0.434-0.55 1.23-0.261 1.771l0.768 1.867c0.184 0.587 0.835 1.067 1.448 1.067h1.337c0.616 0 1.114 0.502 1.114 1.114v2.235c0 0.614-0.497 1.116-1.113 1.116zM16.003 10.824c-2.86 0-5.177 2.317-5.177 5.176s2.317 5.176 5.177 5.176c2.859 0 5.177-2.317 5.177-5.176s-2.317-5.176-5.177-5.176z"></path>
+            </symbol>
+        </svg>
+
+        <h1>SVG Test</h1>
+
+        <h2>aria-label on svg</h2>
+
+        <a href="http://www.ebay.com">
+            <svg aria-label="Settings" role="img">
+                <use xlink:href="#svg-icon-settings"></use>
+            </svg>
+        </a>
+        <button aria-label="Settings" type="button">
+            <svg aria-hidden="true">
+                <use xlink:href="#svg-icon-settings"></use>
+            </svg>
+        </button>
+
+        <h2>aria-label on control</h2>
+
+        <a aria-label="Settings" href="http://www.ebay.com">
+            <svg aria-hidden="true">
+                <use xlink:href="#svg-icon-settings"></use>
+            </svg>
+        </a>
+        <button type="button">
+            <svg aria-label="Settings" role="img">
+                <use xlink:href="#svg-icon-settings"></use>
+            </svg>
+        </button>
+
+        <h2>title element</h2>
+
+        <a href="http://www.ebay.com">
+            <svg>
+                <title>Settings</title>
+                <use xlink:href="#svg-icon-settings"></use>
+            </svg>
+        </a>
+        <button type="button">
+            <svg>
+                <title>Settings</title>
+                <use xlink:href="#svg-icon-settings"></use>
+            </svg>
+        </button>
+
+    </body>
+</html>
