@@ -28,46 +28,119 @@
 
         <h1>SVG Test</h1>
 
-        <h2>aria-label on svg</h2>
+            <hr />
 
-        <a href="http://www.ebay.com">
-            <svg aria-label="Settings" role="img">
-                <use xlink:href="#svg-icon-settings"></use>
-            </svg>
-        </a>
-        <button aria-label="Settings" type="button">
-            <svg aria-hidden="true">
-                <use xlink:href="#svg-icon-settings"></use>
-            </svg>
-        </button>
+            <h2>Without role="img"</h2>
 
-        <h2>aria-label on control</h2>
+                <h3>title element</h3>
 
-        <a aria-label="Settings" href="http://www.ebay.com">
-            <svg aria-hidden="true">
-                <use xlink:href="#svg-icon-settings"></use>
-            </svg>
-        </a>
-        <button type="button">
-            <svg aria-label="Settings" role="img">
-                <use xlink:href="#svg-icon-settings"></use>
-            </svg>
-        </button>
+                    <a href="http://www.ebay.com">
+                        <svg>
+                            <title>Settings</title>
+                            <use xlink:href="#svg-icon-settings"></use>
+                        </svg>
+                    </a>
 
-        <h2>title element</h2>
+                    <button type="button">
+                        <svg>
+                            <title>Settings</title>
+                            <use xlink:href="#svg-icon-settings"></use>
+                        </svg>
+                    </button>
 
-        <a href="http://www.ebay.com">
-            <svg>
-                <title>Settings</title>
-                <use xlink:href="#svg-icon-settings"></use>
-            </svg>
-        </a>
-        <button type="button">
-            <svg>
-                <title>Settings</title>
-                <use xlink:href="#svg-icon-settings"></use>
-            </svg>
-        </button>
+                    <svg>
+                        <title>Settings</title>
+                        <use xlink:href="#svg-icon-settings"></use>
+                    </svg>
+
+                <h3>aria-label on svg</h3>
+
+                    <a href="http://www.ebay.com">
+                        <svg aria-label="Settings">
+                            <use xlink:href="#svg-icon-settings"></use>
+                        </svg>
+                    </a>
+
+                    <button type="button">
+                        <svg aria-label="Settings">
+                            <use xlink:href="#svg-icon-settings"></use>
+                        </svg>
+                    </button>
+
+                    <svg aria-label="Settings">
+                        <use xlink:href="#svg-icon-settings"></use>
+                    </svg>
+
+                <h3>aria-label on control</h3>
+
+                    <a aria-label="Settings" href="http://www.ebay.com">
+                        <svg aria-hidden="true">
+                            <use xlink:href="#svg-icon-settings"></use>
+                        </svg>
+                    </a>
+
+                    <button aria-label="Settings" type="button">
+                        <svg aria-hidden="true">
+                            <use xlink:href="#svg-icon-settings"></use>
+                        </svg>
+                    </button>
+
+                <hr />
+
+            <h2>With role="img"</h2>
+
+                <h3>title element</h3>
+
+                    <a href="http://www.ebay.com">
+                        <svg role="img">
+                            <title>Settings</title>
+                            <use xlink:href="#svg-icon-settings"></use>
+                        </svg>
+                    </a>
+
+                    <button type="button">
+                        <svg role="img">
+                            <title>Settings</title>
+                            <use xlink:href="#svg-icon-settings"></use>
+                        </svg>
+                    </button>
+
+                    <svg role="img">
+                        <title>Settings</title>
+                        <use xlink:href="#svg-icon-settings"></use>
+                    </svg>
+
+                <h3>aria-label on svg</h3>
+
+                    <a href="http://www.ebay.com">
+                        <svg aria-label="Settings" role="img">
+                            <use xlink:href="#svg-icon-settings"></use>
+                        </svg>
+                    </a>
+
+                    <button type="button">
+                        <svg aria-label="Settings" role="img">
+                            <use xlink:href="#svg-icon-settings"></use>
+                        </svg>
+                    </button>
+
+                    <svg aria-label="Settings" role="img">
+                        <use xlink:href="#svg-icon-settings"></use>
+                    </svg>
+
+                <h3>aria-label on control</h3>
+
+                    <a aria-label="Settings" href="http://www.ebay.com">
+                        <svg aria-hidden="true" role="img">
+                            <use xlink:href="#svg-icon-settings"></use>
+                        </svg>
+                    </a>
+
+                    <button aria-label="Settings" type="button">
+                        <svg role="img">
+                            <use xlink:href="#svg-icon-settings"></use>
+                        </svg>
+                    </button>
 
     </body>
 </html>
