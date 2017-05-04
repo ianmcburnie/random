@@ -48,10 +48,12 @@
                         </svg>
                     </button>
 
-                    <svg role="img">
-                        <title>Settings</title>
-                        <use xlink:href="#svg-icon-settings"></use>
-                    </svg>
+                    <span>
+                        <svg>
+                            <title>Settings</title>
+                            <use xlink:href="#svg-icon-settings"></use>
+                        </svg>
+                    </span>
 
                 <h3>aria-label on svg</h3>
 
@@ -67,11 +69,15 @@
                         </svg>
                     </button>
 
-                    <svg aria-label="Settings">
-                        <use xlink:href="#svg-icon-settings"></use>
-                    </svg>
+                    <span>
+                        <svg aria-label="Settings">
+                            <use xlink:href="#svg-icon-settings"></use>
+                        </svg>
+                    </span>
 
                 <h3>aria-label on control/container</h3>
+
+                    <p>(aria-hidden="true" added to svg)</p>
 
                     <a aria-label="Settings" href="http://www.ebay.com">
                         <svg aria-hidden="true">
@@ -85,11 +91,8 @@
                         </svg>
                     </button>
 
-                    <span aria-label="settings">
-                        <svg>
-                            <title>Settings</title>
-                            <use xlink:href="#svg-icon-settings"></use>
-                        </svg>
+                    <span>
+                        n/a
                     </span>
 
                 <hr />
@@ -112,10 +115,12 @@
                         </svg>
                     </button>
 
-                    <svg role="img">
-                        <title>Settings</title>
-                        <use xlink:href="#svg-icon-settings"></use>
-                    </svg>
+                    <span>
+                        <svg role="img">
+                            <title>Settings</title>
+                            <use xlink:href="#svg-icon-settings"></use>
+                        </svg>
+                    </span>
 
                 <h3>aria-label on svg</h3>
 
@@ -131,30 +136,35 @@
                         </svg>
                     </button>
 
-                    <svg aria-label="Settings" role="img">
-                        <use xlink:href="#svg-icon-settings"></use>
-                    </svg>
+                    <span>
+                        <svg aria-label="Settings" role="img">
+                            <use xlink:href="#svg-icon-settings"></use>
+                        </svg>
+                    </span>
 
                 <h3>aria-label on control/container</h3>
 
+                    <p>(role="img" replaced with aria-hidden="true")</p>
+
                     <a aria-label="Settings" href="http://www.ebay.com">
-                        <svg aria-hidden="true" role="img">
+                        <svg aria-hidden="true">
                             <use xlink:href="#svg-icon-settings"></use>
                         </svg>
                     </a>
 
                     <button aria-label="Settings" type="button">
-                        <svg role="img">
+                        <svg aria-hidden="true">
                             <use xlink:href="#svg-icon-settings"></use>
                         </svg>
                     </button>
 
-                    <span aria-label="settings" role="img">
-                        <svg>
-                            <title>Settings</title>
+                    <span aria-label="Settings" role="img">
+                        <svg aria-hidden="true">
                             <use xlink:href="#svg-icon-settings"></use>
                         </svg>
                     </span>
+
+
 
     </body>
 </html>
